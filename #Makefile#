@@ -1,0 +1,14 @@
+all:
+	make game
+
+game: game.o 
+	g++ game.o board.o -o game
+
+game.o: game.cpp board.o
+	g++ -c game.cpp
+
+board.o: board.cpp board.hpp
+	g++ -c board.cpp -Wall -Werror -ansi -pedantic
+
+clean:
+	rm -f *.o game *~
