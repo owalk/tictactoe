@@ -3,6 +3,7 @@
 
 int main(int argc, char* argv[]) {
   
+
   board b;
   
   b.printBoard();

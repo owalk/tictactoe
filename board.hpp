@@ -3,6 +3,7 @@
 #include <string>
 using std::vector;
 using std::string;
+
 #ifndef BOARD_H
 #define BOARD_H
 class board {
@@ -25,5 +26,6 @@ private:
      2d vector to hold the board
    */
   vector < vector < string > > Board;
+
 };
 #endif
