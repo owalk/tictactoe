@@ -2,10 +2,11 @@ all:
 	make game
 
 game: game.o 
-	g++ game.o ai.o board.o player.o -o game
+	g++ game.o  board.o player.o -o game
 
-game.o: game.cpp ai.o board.o player.o
+game.o: game.cpp  board.o player.o
 	g++ -c game.cpp
+
 ai.o: ai.cpp ai.hpp
 	g++ -c ai.cpp -Wall -Werror -ansi -pedantic
 

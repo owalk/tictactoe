@@ -11,8 +11,14 @@ board::board(){
   return;
 }
 
-board::board(int x, int y){
+//myles, try and add to this function here :)
+/**
+   This function will take the x and y coordinates in the matrix and set a value at the specified location
 
+ */
+board::board(int x, int y, string val){
+
+  // board [][] = ...
   return;
 }
 
@@ -21,7 +27,8 @@ string board::printBoard(void){
   string s = "";
   int height =3, width = 3;
 
-  s += "Current board is:\n";
+  s += "Current board is...\n";
+  
   for (int i =0; i < height; i++){
     for(int j=0; j < width; j++){
       s+= Board[i][j];

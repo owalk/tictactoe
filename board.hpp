@@ -13,10 +13,10 @@ public:
    */
   board(void);
   /**
-     @param x: if not 0, add to this value. 1-9
-     @param y: if not 0, add to this value. 1-9
+     add a value at a specified location in the board matrix
+     ei: Board[0][0] = val;
    */
-  board(int x, int y);
+  board(int x, int y, string val);
   /**
      print the current state of the board
    */
