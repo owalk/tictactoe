@@ -11,14 +11,20 @@ board::board(){
   return;
 }
 
-//myles, try and add to this function here :)
 /**
-   This function will take the x and y coordinates in the matrix and set a value at the specified location
+
+picture of coodinates
+
+00|01|02
+--|--|--
+10|11|12
+--|--|--
+20|21|22
 
  */
 board::board(int x, int y, string val){
 
-  // board [][] = ...
+  board[x][y] = val;
   return;
 }
 
@@ -41,4 +47,4 @@ string board::printBoard(void){
   std::cout << s;
 
   return s; //return the board
-}
+
